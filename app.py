@@ -30,7 +30,7 @@ from sklearn.ensemble import (
 
 # ─── Page config ────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Customer Churn Predictor",
+    page_title="CustomerChurnPrediction",
     page_icon="🔮",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -277,7 +277,7 @@ def evaluate_all_models(_df):
 
 # ─── Sidebar ─────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🔮 ChurnGuard AI")
+    st.markdown("## 📊 CustomerChurnPrediction")
     st.markdown("---")
     st.markdown("### Navigation")
     page = st.radio(
@@ -305,7 +305,7 @@ df = load_and_preprocess()
 if page == "🏠 Overview":
     st.markdown("""
     <div class="hero-banner">
-      <h1 style="margin-bottom:0.3rem">🔮 ChurnGuard AI</h1>
+      <h1 style="margin-bottom:0.3rem">📊 CustomerChurnPrediction</h1>
       <p style="font-size:1.1rem; color:#c4b5fd !important">
         End-to-end Customer Churn Prediction Platform
       </p>
